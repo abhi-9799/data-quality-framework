@@ -81,5 +81,3 @@ All results are summarized in an **HTML report** generated via `pytest-html`.
 
 ---
 
-## ✅ Project Structure
-
