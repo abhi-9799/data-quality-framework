@@ -1,0 +1,28 @@
+dataset: orders
+
+checks:
+  - id: orders-amount-no-nulls
+    type: nulls
+    table: orders
+    column: amount
+    max_null_pct: 0.0
+
+  - id: orders-id-unique
+    type: uniqueness
+    table: orders
+    column: order_id
+    max_dupes: 0
+
+  - id: orders-customer-fk
+    type: referential
+    source_table: orders
+    source_column: customer_id
+    target_table: customers
+    target_column: customer_id
+    max_violations: 0
+
+  - id: orders-freshness
+    type: freshness
+    table: orders
+    ts_col: ingest_ts
+    max_age_hours: 48
