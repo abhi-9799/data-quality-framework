@@ -1,4 +1,4 @@
----
+
 title: "Data Quality Testing Framework"
 author: "Abhilash Nair"
 description: "A step-by-step, lightweight data-quality validation framework built using Python, Pytest, and SQLite."
@@ -12,7 +12,7 @@ tech_stack:
   - SQLite
   - YAML
   - pytest-html
----
+
 
 # Data Quality Testing Framework
 
